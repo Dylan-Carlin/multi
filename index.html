@@ -2,45 +2,212 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Long John Silver's</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official homepage of Long John Silver’s. Discover our story, signature menu, customer love, and more.">
+  <title>Long John Silver's | Home</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5fafd;
+      color: #003049;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 4px black;
+      padding: 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #023e8a;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .values-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .value-box {
+      flex: 1 1 280px;
+      background: #e0f7fa;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .menu-card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .menu-card h4 {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .testimonial {
+      background: #f1f1f1;
+      border-left: 5px solid #0077b6;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+    .cta {
+      background: #caf0f8;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .cta input[type="email"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .cta button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>⚓ Long John Silver's</h1>
-    <p class="tagline">Seafood Treasures Since 1969</p>
+    <h1>Long John Silver's</h1>
+    <p>Seafood Treasures Since 1969</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="locations.html">Locations</a>
+      <a href="careers.html">Careers</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Welcome Aboard!</h2>
-      <p>We bring you golden-fried, sea-sourced flavor straight from the galley. From crispy fish to hushpuppies, we’ve been sailing taste buds into the sunset for decades.</p>
-    </section>
+  <section class="hero">
+    <h1>Golden Fried Goodness</h1>
+    <p>Welcome to a world where crispy fish, fresh sides, and bold flavors unite to bring the ocean to your plate.</p>
+  </section>
 
-    <section class="story">
-      <h2>Our Story</h2>
-      <p>Founded on the idea of serving hearty seaside meals, Long John Silver's has become a staple of classic American seafood. Every dish is crafted with care, seasoned with tradition, and served with a smile.</p>
-    </section>
+  <section class="section about">
+    <h2>Our Story</h2>
+    <p>Founded in 1969, Long John Silver’s started with a simple mission: to bring the taste of the coast to communities across America. Inspired by seaside shacks and shipboard kitchens, our food celebrates the adventurous spirit of the sea. We use only quality ingredients, traditional recipes, and the friendliest service around.</p>
+  </section>
 
-    <section class="menu">
-      <h2>Captain’s Picks</h2>
-      <ul>
-        <li><strong>2-Piece Fish Meal</strong> – Crispy battered fish, fries, and hushpuppies</li>
-        <li><strong>Shrimp Basket</strong> – Golden shrimp with sides</li>
-        <li><strong>Chicken & Fish Combo</strong> – Surf & turf, Long John style</li>
-        <li><strong>Family Platter</strong> – Feast for four with fish, shrimp, and sides</li>
-      </ul>
-    </section>
+  <section class="section values">
+    <h2>What We Stand For</h2>
+    <div class="values-list">
+      <div class="value-box">
+        <h4>Freshness</h4>
+        <p>From ocean to fryer, we believe quality seafood starts with freshness and ends with satisfaction.</p>
+      </div>
+      <div class="value-box">
+        <h4>Community</h4>
+        <p>We support local causes and bring people together with every meal served.</p>
+      </div>
+      <div class="value-box">
+        <h4>Tradition</h4>
+        <p>Our recipes have stood the test of time, passed down and perfected over generations.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="navigation">
-      <button onclick="window.location.href='nutrition.html'">Learn More Nutrition</button>
-      <button onclick="window.location.href='locations.html'">Find Locations</button>
-      <button onclick="window.location.href='careers.html'">Careers</button>
-    </section>
-  </main>
+  <section class="section menu">
+    <h2>Captain’s Picks</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/220x140/?fish,meal" alt="Fish Meal">
+        <h4>2-Piece Fish Meal</h4>
+        <p>Our classic battered fish with fries and hushpuppies.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/220x140/?shrimp,plate" alt="Shrimp Basket">
+        <h4>Shrimp Basket</h4>
+        <p>Golden-fried shrimp with our signature sides.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/220x140/?fish,chicken" alt="Combo">
+        <h4>Chicken & Fish Combo</h4>
+        <p>The best of both worlds — crispy and satisfying.</p>
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/220x140/?family,dinner" alt="Family Platter">
+        <h4>Family Platter</h4>
+        <p>A hearty meal for four, including fish, shrimp, and sides.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonial">“The crunch of that fish? Unbeatable. Long John Silver’s is my go-to comfort food.” – <strong>Alex R.</strong></div>
+    <div class="testimonial">“They nailed the hushpuppies and shrimp. It’s fast food with flavor and heart.” – <strong>Sandra M.</strong></div>
+    <div class="testimonial">“Affordable, filling, and nostalgic. I love bringing my kids here.” – <strong>Marcus D.</strong></div>
+  </section>
+
+  <section class="section cta">
+    <h2>Stay in the Loop</h2>
+    <p>Sign up for our newsletter and be the first to know about deals, menu updates, and more!</p>
+    <form>
+      <input type="email" placeholder="you@example.com" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Long John Silver's, Inc. | Anchored in Flavor</p>
+    <p>&copy; 2025 Long John Silver's, Inc.</p>
+    <p>📞 1-800-SEA-FOOD | ✉️ info@ljs.com</p>
+    <p><a href="careers.html" style="color:white;">Join Our Crew</a></p>
   </footer>
+
 </body>
 </html>
