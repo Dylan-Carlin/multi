@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e0f7fa;
+  color: #003049;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.intro, .story, .menu, .nutrition-details, .healthy-options,
+.locations, .careers {
+  background: white;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  display: block;
+  margin: 1.5rem auto;
+  background-color: #0096c7;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00b4d8;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+thead {
+  background: #0077b6;
+  color: white;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+footer {
+  background: #003049;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 50px;
+}
