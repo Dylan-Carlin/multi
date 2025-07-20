@@ -1,88 +1,343 @@
+/* Base Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #e0f7fa;
+  background: #f5fafd;
   color: #003049;
+  line-height: 1.6;
 }
 
-header {
+header, footer {
   background: #0077b6;
   color: white;
-  padding: 1.5rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+.section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  color: #023e8a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Homepage Styles */
+.hero {
+  background: url('https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  padding: 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
   text-align: center;
 }
 
-.tagline {
-  font-style: italic;
-  margin-top: 0.5rem;
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-main {
-  padding: 2rem;
+.value-box {
+  flex: 1 1 280px;
+  background: #e0f7fa;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-.intro, .story, .menu, .nutrition-details, .healthy-options,
-.locations, .careers {
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-card {
   background: white;
-  margin: 1rem auto;
-  padding: 1.5rem;
+  border: 1px solid #ccc;
   border-radius: 12px;
-  max-width: 700px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-button {
-  display: block;
-  margin: 1.5rem auto;
-  background-color: #0096c7;
+.menu-card h4 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.testimonial {
+  background: #f1f1f1;
+  border-left: 5px solid #0077b6;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.cta {
+  background: #caf0f8;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cta button {
+  background: #0077b6;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.1rem;
-  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  margin-left: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  border-radius: 5px;
 }
 
-button:hover {
-  background-color: #00b4d8;
+/* Nutrition Page */
+.nutrition-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
-ul {
+.nutri-card {
+  background: #e0f7fa;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #bde0fe;
+}
+
+.nutri-card h4 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #005f73;
+}
+
+.nutri-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nutri-card li {
+  padding: 4px 0;
+  border-bottom: 1px dashed #ccc;
+  font-size: 0.95rem;
+}
+
+.highlight {
+  background: #ffedd5;
+  padding: 1rem;
+  border-left: 5px solid #ff7f11;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #0077b6;
+  color: white;
+  padding: 0.6rem;
+}
+
+td {
+  padding: 0.6rem;
+  text-align: center;
+}
+
+/* Locations Page */
+.location-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.location-card {
+  background: #e0f7fa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.location-card h4 {
+  margin-top: 0;
+  color: #0077b6;
+}
+
+.location-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+.map-container {
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+.store-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.store-type {
+  flex: 1 1 250px;
+  background: #edf6f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #b0d0d3;
+}
+
+.store-type h4 {
+  margin-top: 0;
+  color: #006d77;
+}
+
+/* Careers Page */
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.job-card {
+  background: #e0f7fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #bde0fe;
+}
+
+.job-card h4 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #005f73;
+}
+
+.job-card p {
+  font-size: 0.95rem;
+}
+
+.benefits ul {
   list-style: none;
   padding-left: 0;
 }
 
-li {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+.benefits li {
+  background: #f1f1f1;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 5px solid #0077b6;
+  border-radius: 6px;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 700px;
-  margin: 1rem auto;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.testimonial {
+  background: #fff3cd;
+  border-left: 6px solid #ffc107;
+  padding: 1.25rem;
+  margin: 2rem 0;
+  border-radius: 8px;
 }
 
-thead {
+.testimonial strong {
+  display: block;
+  margin-top: 0.5rem;
+  color: #5f370e;
+}
+
+.apply-box {
+  background: #caf0f8;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 3rem 0;
+}
+
+.apply-box button {
   background: #0077b6;
   color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-th, td {
-  padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
-  text-align: center;
+.cta-form input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-footer {
-  background: #003049;
+.cta-form button {
+  background: #0077b6;
   color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 50px;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
