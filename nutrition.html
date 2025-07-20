@@ -2,47 +2,253 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nutrition Info | Long John Silver's</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detailed nutritional information for Long John Silver's menu items." />
+  <title>Long John Silver's | Nutrition</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fdfc;
+      color: #002c47;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #023e8a;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .nutrition-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .nutri-card {
+      background: #e0f7fa;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #bde0fe;
+    }
+    .nutri-card h4 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #005f73;
+    }
+    .nutri-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .nutri-card li {
+      padding: 4px 0;
+      border-bottom: 1px dashed #ccc;
+      font-size: 0.95rem;
+    }
+    .highlight {
+      background: #ffedd5;
+      padding: 1rem;
+      border-left: 5px solid #ff7f11;
+      margin: 2rem 0;
+      border-radius: 8px;
+    }
+    .disclaimer {
+      font-size: 0.85rem;
+      color: #555;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #0077b6;
+      color: white;
+      padding: 0.6rem;
+    }
+    td {
+      padding: 0.6rem;
+      text-align: center;
+    }
+    .cta {
+      background: #caf0f8;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta input[type="email"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .cta button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>🥗 Nutrition at Long John Silver's</h1>
-    <p class="tagline">Balance Flavor & Wellness</p>
+    <h1>Long John Silver's</h1>
+    <p>Seafood Treasures Since 1969</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="locations.html">Locations</a>
+      <a href="careers.html">Careers</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="nutrition-details">
-      <h2>Meal Nutrition Breakdown</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Meal</th>
-            <th>Calories</th>
-            <th>Protein (g)</th>
-            <th>Fat (g)</th>
-            <th>Sodium (mg)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>2-Piece Fish Meal</td><td>790</td><td>36</td><td>45</td><td>1230</td></tr>
-          <tr><td>Shrimp Basket</td><td>660</td><td>30</td><td>38</td><td>1190</td></tr>
-          <tr><td>Chicken & Fish Combo</td><td>980</td><td>50</td><td>55</td><td>1540</td></tr>
-          <tr><td>Family Platter (per serving)</td><td>1100</td><td>55</td><td>60</td><td>1650</td></tr>
-        </tbody>
-      </table>
-    </section>
+  <section class="section">
+    <div class="intro">
+      <h2>Nutritional Information</h2>
+      <p>We believe in transparency and empowering our guests to make informed choices. Below is a breakdown of the nutrition behind our most beloved meals.</p>
+    </div>
 
-    <section class="healthy-options">
-      <h2>Healthy Choices</h2>
-      <p>We offer grilled fish and chicken options for those who prefer lighter meals. Pair your favorites with a fresh side salad or steamed veggies for a balanced meal.</p>
-    </section>
+    <div class="nutrition-cards">
+      <div class="nutri-card">
+        <h4>2-Piece Fish Meal</h4>
+        <ul>
+          <li>Calories: 830</li>
+          <li>Fat: 45g</li>
+          <li>Sodium: 1,210mg</li>
+          <li>Protein: 29g</li>
+          <li>Carbs: 75g</li>
+        </ul>
+      </div>
+      <div class="nutri-card">
+        <h4>Shrimp Basket</h4>
+        <ul>
+          <li>Calories: 670</li>
+          <li>Fat: 36g</li>
+          <li>Sodium: 980mg</li>
+          <li>Protein: 21g</li>
+          <li>Carbs: 60g</li>
+        </ul>
+      </div>
+      <div class="nutri-card">
+        <h4>Chicken & Fish Combo</h4>
+        <ul>
+          <li>Calories: 920</li>
+          <li>Fat: 50g</li>
+          <li>Sodium: 1,300mg</li>
+          <li>Protein: 32g</li>
+          <li>Carbs: 82g</li>
+        </ul>
+      </div>
+      <div class="nutri-card">
+        <h4>Family Platter (Per Person)</h4>
+        <ul>
+          <li>Calories: 950</li>
+          <li>Fat: 48g</li>
+          <li>Sodium: 1,450mg</li>
+          <li>Protein: 33g</li>
+          <li>Carbs: 85g</li>
+        </ul>
+      </div>
+    </div>
 
-    <button onclick="window.location.href='index.html'">⬅ Back to Home</button>
-  </main>
+    <div class="highlight">
+      <h4>Allergen Notice</h4>
+      <p>Our kitchens prepare food that contains or may come into contact with fish, shellfish, dairy, wheat, soy, and eggs. While we take precautions, cross-contact is possible.</p>
+    </div>
+
+    <h2>Common Side Items</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Calories</th>
+        <th>Fat</th>
+        <th>Sodium</th>
+        <th>Carbs</th>
+      </tr>
+      <tr>
+        <td>Fries</td>
+        <td>320</td>
+        <td>16g</td>
+        <td>420mg</td>
+        <td>38g</td>
+      </tr>
+      <tr>
+        <td>Hushpuppies (2)</td>
+        <td>150</td>
+        <td>7g</td>
+        <td>310mg</td>
+        <td>18g</td>
+      </tr>
+      <tr>
+        <td>Cole Slaw</td>
+        <td>170</td>
+        <td>9g</td>
+        <td>200mg</td>
+        <td>22g</td>
+      </tr>
+      <tr>
+        <td>Green Beans</td>
+        <td>90</td>
+        <td>4g</td>
+        <td>180mg</td>
+        <td>10g</td>
+      </tr>
+    </table>
+
+    <div class="disclaimer">
+      <p>*Nutrition data is based on standard serving sizes and may vary slightly by location or customization.</p>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <h2>Stay Balanced with Flavor</h2>
+    <p>Subscribe for meal tips, allergen updates, and new lighter options as they launch.</p>
+    <form>
+      <input type="email" placeholder="you@example.com" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Long John Silver's, Inc. | Flavor Meets Wellness</p>
+    <p>&copy; 2025 Long John Silver's, Inc.</p>
+    <p>📞 1-800-SEA-FOOD | ✉️ nutrition@ljs.com</p>
+    <p><a href="careers.html" style="color:white;">Join Our Crew</a></p>
   </footer>
+
 </body>
 </html>
